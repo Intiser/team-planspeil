@@ -30,8 +30,7 @@ export class AppComponent implements OnInit {
       .subscribe((result)=>{
           console.log(result);
           if(result == PageConstants.HOME){
-              
-              this.home.nativeElement.scrollIntoView({ behavior: 'smooth' });
+            this.home.nativeElement.scrollIntoView({ behavior: 'smooth' });
           }
           else if(result ==  PageConstants.TEAM){
             this.team.nativeElement.scrollIntoView({ behavior: 'smooth' });

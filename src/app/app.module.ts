@@ -9,6 +9,10 @@ import { MainComponent } from './layout/main/main.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { MembersDetailsComponent } from './pages/members-details/members-details.component';
 import { VisionDetailsComponent } from './pages/vision-details/vision-details.component';
+import { TeamCardComponent } from './layout/team-card/team-card.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -17,15 +21,19 @@ import { VisionDetailsComponent } from './pages/vision-details/vision-details.co
     MainComponent,
     LandingPageComponent,
     MembersDetailsComponent,
-    VisionDetailsComponent
+    VisionDetailsComponent,
+    TeamCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })

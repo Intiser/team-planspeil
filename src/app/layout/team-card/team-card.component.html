@@ -1,0 +1,18 @@
+<div style="margin: 2%; margin-top: 10%;">
+    <!-- style="width: 18rem;" -->
+    <div class="card text" >
+      <img class="card-img-top" src="/grey.svg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div fxLayout="row">
+          <img [src]="instaImgSrc" (mouseover)="mouseOverInsta()" (mouseout)="mouseOutInsta()" width="24px" height="24px"/>
+          <img [src]="linkImgSrc" (mouseover)="mouseOverLink()" (mouseout)="mouseOutLink()" style="margin-left: 16px;" width="24px" height="24px"/>
+          <img [src]="gitImgSrc" (mouseover)="mouseOverGit()" (mouseout)="mouseOutGit()" style="margin-left: 16px;" width="24px" height="24px"/>
+          <img [src]="mailImgSrc"  (mouseover)="mouseOverMail()" (mouseout)="mouseOutMail()"  style="margin-left: 16px;" width="24px" height="24px"/>
+        </div>
+      </div>
+    </div>
+    
+  </div>

@@ -11,3 +11,21 @@
     margin-bottom: 2%;
     text-align: center;
 }
+
+.text-class{
+  font-size: 16px;
+}
+
+.big{
+  font-size: 24px;
+  font-style: bold;
+}
+
+.subhead{
+  //font-style: bold;
+  color: var(--text-black);
+}
+
+.subhead::first-letter{
+  initial-letter: 1.5;
+}

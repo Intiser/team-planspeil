@@ -17,7 +17,7 @@ export class MainComponent implements OnInit {
   @ViewChild('team')
   team!: ElementRef;
 
-  @ViewChild('vission')
+  @ViewChild('about')
   vission!: ElementRef;
 
   constructor(private pageService:PageService,

@@ -1,6 +1,8 @@
+@import '../../../styles.scss';
+
 .members{
     height: 100vh; 
-    background-color: cornflowerblue; 
+    background-color: var(--secondary-bg); 
     
   }
 

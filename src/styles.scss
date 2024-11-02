@@ -26,6 +26,10 @@ $team-page-theme: mat.define-theme((
 // that you are using.
 :root {
   @include mat.all-component-themes($team-page-theme);
+  --primary-color: #39608F;
+  --secondary-color: #545F70;
+  --bg-color: #FFFFFF;
+  --secondary-bg: #F8F9FF;
 }
 
 // Comment out the line below if you want to use the pre-defined typography utility classes.
@@ -40,8 +44,6 @@ $team-page-theme: mat.define-theme((
 @import 'bootstrap/scss/bootstrap';
 
 
-$primary-color: #7300f8;
-$secondary-color: #5013ff;
 
 
 html, body { height: 100%; }

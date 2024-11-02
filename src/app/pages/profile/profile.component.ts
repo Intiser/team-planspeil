@@ -9,10 +9,10 @@ import { MemberService } from '../../services/team-service';
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent implements OnInit{
-  mailImgSrc='/mail_black.svg';
-  instaImgSrc='/insta_black.svg';
-  linkImgSrc='/linkedin_black.svg';
-  gitImgSrc='/github_black.svg';
+  mailImgSrc='/mail_black_alt.svg';
+  instaImgSrc='/insta_black_alt.svg';
+  linkImgSrc='/linkedin_black_alt.svg';
+  gitImgSrc='/github_black_alt.svg';
 
   selectedPerson: any = TeamData.data["elmira"];
 
@@ -30,36 +30,36 @@ export class ProfileComponent implements OnInit{
   }
 
   mouseOverMail(){
-    this.mailImgSrc = '/mail_black_alt.svg';
+    this.mailImgSrc = '/mail_black.svg';
     console.log("log");
   }
 
   mouseOutMail(){
-    this.mailImgSrc='/mail_black.svg';
+    this.mailImgSrc='/mail_black_alt.svg';
   }
 
   mouseOverInsta(){
-    this.instaImgSrc = '/insta_black_alt.svg';
+    this.instaImgSrc = '/insta_black.svg';
   }
 
   mouseOutInsta(){
-    this.instaImgSrc='/insta_black.svg';
+    this.instaImgSrc='/insta_black_alt.svg';
   }
 
   mouseOverLink(){
-    this.linkImgSrc = '/linkedin_black_alt.svg';
+    this.linkImgSrc = '/linkedin_black.svg';
   }
 
   mouseOutLink(){
-    this.linkImgSrc='/linkedin_black.svg';
+    this.linkImgSrc='/linkedin_black_alt.svg';
   }
 
   mouseOverGit(){
-    this.gitImgSrc = '/github_black_alt.svg';
+    this.gitImgSrc = '/github_black.svg';
   }
 
   mouseOutGit(){
-    this.gitImgSrc='/github_black.svg';
+    this.gitImgSrc='/github_black_alt.svg';
   }
 
 }

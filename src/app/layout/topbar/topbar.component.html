@@ -5,7 +5,7 @@
       <span class="text-muted">Toggleable via the navbar brand.</span>
     </div>
   </div> -->
-<div *ngIf="fullNavbar">
+<div >
   <nav class="navbar navbar-expand-lg navbar-light bg-light layout">
     
     <div class="navbar-brand cursor" (click)="logoClicked()">
@@ -14,30 +14,36 @@
       </a>
       Sublation
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <!-- <span class="sr-only">(current)</span> -->
-          <div class="nav-link cursor" (click)="homeClicked()">Home </div>
-        </li>
-        <li class="nav-item">
-          <div class="nav-link cursor" (click)="teamClicked()">Members</div>
-        </li>
-        <li class="nav-item">
-          <div class="nav-link cursor" (click)="vissionClicked()">Details</div>
-        </li>
-      </ul>
+    <div *ngIf="fullNavbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <!-- <span class="sr-only">(current)</span> -->
+            <div class="nav-link cursor" (click)="homeClicked()">Home </div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link cursor" (click)="teamClicked()">Team</div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link cursor" (click)="vissionClicked()">About</div>
+          </li>
+        </ul>
+      </div>
     </div>
+    
   </nav>
 </div>
   
 <!-- </div> -->
 
-<div *ngIf="!fullNavbar">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light layout">
-    <div class="navbar-brand topbar cursor" (click)="logoClicked()">Team Name</div>
-  </nav>
-</div>
+<!-- <div *ngIf="!fullNavbar">
+  <div class="navbar-brand cursor" (click)="logoClicked()">
+    <a class="navbar-brand topbar" href="#">
+      <img src="/logo.svg" width="30" height="30" alt="">
+    </a>
+    Sublation
+  </div>
+</div> -->

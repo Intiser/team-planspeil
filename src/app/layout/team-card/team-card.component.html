@@ -3,7 +3,7 @@
     <div class="card text">
       <img class="card-img-top" style="aspect-ratio: 3/4;" [src]="selectedPerson.pic" alt="Card image cap">
       <div class="card-body">
-        <a (click)="clickPerson()" style="text-decoration: none; color:#1E88E5" ><h5 class="card-title" >{{selectedPerson.fullname}}</h5> </a>
+        <a (click)="clickPerson()" style="text-decoration: none; color:#1E88E5; cursor: pointer;" ><h5 class="card-title" >{{selectedPerson.fullname}}</h5> </a>
         <h6 class="card-subtitle mb-2 text-muted">{{selectedPerson.subtitle}}</h6>
         <p class="card-text" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;">{{shortText()}}</p>
         <!-- <a type="button" class="btn btn-link" href="/profile" >See More</a> -->

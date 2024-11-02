@@ -9,9 +9,9 @@
         <!-- <a type="button" class="btn btn-link" href="/profile" >See More</a> -->
         <div fxLayout="row" style="margin-bottom: 5%;">
           <!-- <img [src]="instaImgSrc" (mouseover)="mouseOverInsta()" (mouseout)="mouseOutInsta()" width="24px" height="24px"/> -->
-          <img [src]="linkImgSrc" (mouseover)="mouseOverLink()" (mouseout)="mouseOutLink()" width="24px" height="24px"/>
-          <img [src]="gitImgSrc" (mouseover)="mouseOverGit()" (mouseout)="mouseOutGit()" style="margin-left: 16px;" width="24px" height="24px"/>
-          <img [src]="mailImgSrc"  (mouseover)="mouseOverMail()" (mouseout)="mouseOutMail()"  style="margin-left: 16px;" width="24px" height="24px"/>
+          <a [href]="selectedPerson.social.linkedin" target="_blank"> <img  [src]="linkImgSrc" (mouseover)="mouseOverLink()" (mouseout)="mouseOutLink()" width="24px" height="24px"/> </a>
+          <a [href]="selectedPerson.social.github" target="_blank"> <img [src]="gitImgSrc" (mouseover)="mouseOverGit()" (mouseout)="mouseOutGit()" style="margin-left: 30px;" width="24px" height="24px"/> </a>
+          <a [href]="selectedPerson.social.email"> <img [src]="mailImgSrc"  (mouseover)="mouseOverMail()" (mouseout)="mouseOutMail()"  style="margin-left: 30px;" width="24px" height="24px"/></a>
         </div>
       </div>
     </div>

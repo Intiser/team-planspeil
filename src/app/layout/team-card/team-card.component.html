@@ -6,8 +6,9 @@
         <a (click)="clickPerson()" style="text-decoration: none; color:#1E88E5; cursor: pointer;" ><h5 class="card-title" >{{selectedPerson.fullname}}</h5> </a>
         <h6 class="card-subtitle mb-2 text-muted">{{selectedPerson.subtitle}}</h6>
         <p class="card-text" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;">{{shortText()}}</p>
+        <a (click)="clickPerson()" style="text-decoration: none; color:#1E88E5; cursor: pointer;">See More</a>
         <!-- <a type="button" class="btn btn-link" href="/profile" >See More</a> -->
-        <div fxLayout="row" style="margin-bottom: 5%;">
+        <div fxLayout="row" style="margin-bottom: 5%; margin-top: 5%;">
           <!-- <img [src]="instaImgSrc" (mouseover)="mouseOverInsta()" (mouseout)="mouseOutInsta()" width="24px" height="24px"/> -->
           <a [href]="selectedPerson.social.linkedin" target="_blank"> <img  [src]="linkImgSrc" (mouseover)="mouseOverLink()" (mouseout)="mouseOutLink()" width="24px" height="24px"/> </a>
           <a [href]="selectedPerson.social.github" target="_blank"> <img [src]="gitImgSrc" (mouseover)="mouseOverGit()" (mouseout)="mouseOutGit()" style="margin-left: 30px;" width="24px" height="24px"/> </a>

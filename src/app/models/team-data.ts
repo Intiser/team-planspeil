@@ -31,10 +31,10 @@ export class TeamData{
             fullname: "Kaniz Fatema Fomy",
             subtitle: "Studying Masters in Web Engineering at Technische Universität Chemnitz",
             about: "I am pursuing a Master's degree in Web Engineering at Technische Universität Chemnitz. I hold a Bachelor's degree in Computer Science & Software Engineering from the American International University-Bangladesh. I have professional experience in business development at Kovair Software which has enabled me to identify market opportunities, build strong client relationships, and boost brand visibility. ",
-            pic: "",
+            pic: "fm.jpg",
             social: {
                 linkedin: "https://www.linkedin.com/in/fomy-kaniz-fatema/",
-                github: "",
+                github: "https://github.com/fomykanizfatema",
                 email: "mailto:fomykf@gmail.com"
             }
         },
@@ -42,10 +42,10 @@ export class TeamData{
             fullname: "Sajidur Rahman",
             subtitle: "Studying Masters in Web Engineering at Technische Universität Chemnitz",
             about: "I am a Software Engineer with a passion for mobile and web development. Currently pursuing a master’s degree in Web Engineering at TU Chemnitz, I am expanding my knowledge and skills in cutting-edge technologies. I specialize in Android development, building cross-platform mobile apps with Flutter, and developing robust backend solutions using ExpressJS and .Net Core. Additionally, I have extensive experience designing scalable REST APIs and GraphQL services to ensure seamless communication between systems.",
-            pic: "",
+            pic: "sjd.png",
             social: {
-                linkedin: "",
-                github: "",
+                linkedin: "https://www.linkedin.com/in/msrkms/",
+                github: "https://github.com/msrkms",
                 email: "mailto:sajidur.swe@gmail.com"
             }
         },

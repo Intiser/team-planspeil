@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { MatDialogModule } from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,6 +13,11 @@ import { TeamCardComponent } from './layout/team-card/team-card.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import { MemberDialogComponent } from './pages/member-dialog/member-dialog.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { AboutComponent } from './pages/about/about.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { ImpressumComponent } from './pages/impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +27,20 @@ import {MatCardModule} from '@angular/material/card';
     LandingPageComponent,
     MembersDetailsComponent,
     VisionDetailsComponent,
-    TeamCardComponent
+    TeamCardComponent,
+    MemberDialogComponent,
+    ProfileComponent,
+    AboutComponent,
+    FooterComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    MatDialogModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [
     provideClientHydration(),

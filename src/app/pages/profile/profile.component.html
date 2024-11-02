@@ -1,0 +1,34 @@
+<app-topbar class="topbar" [fullnav]="false" ></app-topbar>
+<div>
+    <div  style="display: flex; flex-direction: row; width: 100vw; height: 100%;">
+        <!-- picture -->
+        <div  style="flex-direction: column; width: 33%; height: 100%; margin-top: 5%">
+            <div >
+                <img [src]="selectedPerson.pic" class="rounded mx-auto d-block img-fluid" style="width: 50%; aspect-ratio: 3/4;">    
+            </div>
+            
+        </div>
+
+        <!-- writing  -->
+         <div  style="display: flex; flex-direction: column; height: 100%; width: 67%;">
+            <div style="width:100%; margin-top: 10%; display: flex; flex-direction: column; align-items: left;">
+                <div style="text-align: left;">
+                    <h4 class="card-title">{{selectedPerson.fullname}}</h4>
+                    <h6 class="card-subtitle mb-2 text-muted" style="margin-top: 12px; width: 320px;">{{selectedPerson.subtitle}}</h6>
+                </div>
+                <div fxLayout="row" style="width: max-content; display: flex; margin-top: 24px;">
+                    <!-- <img [src]="instaImgSrc" (mouseover)="mouseOverInsta()" (mouseout)="mouseOutInsta()" width="24px" height="24px"/> -->
+                    <a [href]="selectedPerson.social.linkedin" target="_blank"> <img  [src]="linkImgSrc" (mouseover)="mouseOverLink()" (mouseout)="mouseOutLink()" width="24px" height="24px"/> </a>
+                    <a [href]="selectedPerson.social.github" target="_blank"> <img [src]="gitImgSrc" (mouseover)="mouseOverGit()" (mouseout)="mouseOutGit()" style="margin-left: 30px;" width="24px" height="24px"/> </a>
+                    <a [href]="selectedPerson.social.email"> <img [src]="mailImgSrc"  (mouseover)="mouseOverMail()" (mouseout)="mouseOutMail()"  style="margin-left: 30px;" width="24px" height="24px"/></a>
+                  </div>
+            </div>
+            <div style="margin-top: 64px; width: 60%" >
+                <p class="card-text" >
+                    {{selectedPerson.about}}
+                </p>
+            </div>
+            
+         </div>
+    </div>
+</div>

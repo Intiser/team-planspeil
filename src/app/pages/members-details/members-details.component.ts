@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TeamData } from '../../models/team-data';
 
 @Component({
   selector: 'app-members-details',
@@ -8,7 +9,11 @@ import { Component } from '@angular/core';
 export class MembersDetailsComponent {
     
 
+data:any = TeamData.team;
 
+  constructor(){
+    
+  }
 
 
 }

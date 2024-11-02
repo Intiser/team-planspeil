@@ -1,14 +1,15 @@
-<div style="margin: 2%; margin-top: 10%;">
+<div style="margin: 4%; margin-top: 10%;">
     <!-- style="width: 18rem;" -->
-    <div class="card text" >
-      <img class="card-img-top" src="/grey.svg" alt="Card image cap">
+    <div class="card text">
+      <img class="card-img-top" style="aspect-ratio: 3/4;" [src]="selectedPerson.pic" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <div fxLayout="row">
-          <img [src]="instaImgSrc" (mouseover)="mouseOverInsta()" (mouseout)="mouseOutInsta()" width="24px" height="24px"/>
-          <img [src]="linkImgSrc" (mouseover)="mouseOverLink()" (mouseout)="mouseOutLink()" style="margin-left: 16px;" width="24px" height="24px"/>
+        <a (click)="clickPerson()" style="text-decoration: none; color:#1E88E5" ><h5 class="card-title" >{{selectedPerson.fullname}}</h5> </a>
+        <h6 class="card-subtitle mb-2 text-muted">{{selectedPerson.subtitle}}</h6>
+        <p class="card-text" style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;">{{shortText()}}</p>
+        <!-- <a type="button" class="btn btn-link" href="/profile" >See More</a> -->
+        <div fxLayout="row" style="margin-bottom: 5%;">
+          <!-- <img [src]="instaImgSrc" (mouseover)="mouseOverInsta()" (mouseout)="mouseOutInsta()" width="24px" height="24px"/> -->
+          <img [src]="linkImgSrc" (mouseover)="mouseOverLink()" (mouseout)="mouseOutLink()" width="24px" height="24px"/>
           <img [src]="gitImgSrc" (mouseover)="mouseOverGit()" (mouseout)="mouseOutGit()" style="margin-left: 16px;" width="24px" height="24px"/>
           <img [src]="mailImgSrc"  (mouseover)="mouseOverMail()" (mouseout)="mouseOutMail()"  style="margin-left: 16px;" width="24px" height="24px"/>
         </div>

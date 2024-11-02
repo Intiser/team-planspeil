@@ -1,15 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { PageService } from '../../services/page-service';
 import { PageConstants } from '../../models/page-contants';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
   styleUrl: './topbar.component.scss'
 })
-export class TopbarComponent {
+export class TopbarComponent implements OnInit {
 
-  constructor(private pageService:PageService){
+  @Input("fullnav")
+  fullNavbar = true;
+
+  constructor(private pageService:PageService,
+              private router:Router,
+  ){
+  }
+
+  ngOnInit(): void{
+    
   }
 
   homeClicked(){
@@ -27,6 +37,10 @@ export class TopbarComponent {
     this.pageService.setSelectedPageSubject(PageConstants.DETAILS);
   }
 
+  logoClicked(){
+    console.log("logo");
+    this.router.navigate(["/"]);
+  }
 
 
 }

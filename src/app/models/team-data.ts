@@ -11,8 +11,8 @@ export class TeamData{
             about: "I Pursuing a master's degree in web engineering and embarked on a journey in which I try to blend art, technology, and philosophy to create a brighter future for all.\n I  see the web not only as a tool but as a bridge connecting diverse cultures, fostering dialogue, and driving positive change in human life.\n I believe in the profound potential of the digital realm to influence the world positively. With a passion for web engineering, I try to set out to bridge the gap between technology and the human experience. I realized that the web was more than just lines of code; it is a canvas upon which they can paint meaningful experiences for people around the world.",
             pic: "elm.jpg",
             social: {
-                linkedin: "",
-                github: "",
+                linkedin: "http://linkedin.com/in/elmira-hashemi-098630110",
+                github: "https://github.com/elmirahmi",
                 email: "mailto:elmira.hashemipour@gmail.com"
             }
         },

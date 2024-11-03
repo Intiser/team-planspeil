@@ -18,6 +18,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { AboutComponent } from './pages/about/about.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { ImpressumComponent } from './pages/impressum/impressum.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ImpressumComponent } from './pages/impressum/impressum.component';
     MatDialogModule,
     MatCardModule,
     MatButtonModule,
+    FontAwesomeModule,
   ],
   providers: [
     provideClientHydration(),

@@ -35,13 +35,13 @@ export class TeamCardComponent implements OnInit{
     }
 
     ngOnInit(): void {
-      console.log(this.person);
+      //console.log(this.person);
       this.selectedPerson = TeamData.data[this.person];
     }
 
     clickPerson(){
       this.memberService.setSelectedMemberSubject(this.person);
-      console.log("called");
+      //console.log("called");
       this.router.navigate(["/profile"]);
     }
 

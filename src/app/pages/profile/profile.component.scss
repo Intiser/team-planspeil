@@ -1,1 +1,8 @@
 @import '../../../styles.scss';
+
+
+.topbar{
+    position: fixed;
+    width: 100vw;
+    z-index: 5000;
+}
